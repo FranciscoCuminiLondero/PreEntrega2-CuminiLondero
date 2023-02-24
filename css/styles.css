@@ -28,7 +28,6 @@ img {
         "main main"
         "footer footer";
     grid-template-rows: 250px auto 200px;
-
 }
 
 /* HEADER */
@@ -65,7 +64,7 @@ header nav {
 
 /* MAIN */
 main {
-    grid-area: main ;
+    grid-area: main;
 }
 section {
     margin: 15px;
