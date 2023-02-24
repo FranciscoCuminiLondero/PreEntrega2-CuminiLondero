@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c28b568b4f.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>Contacto</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/styles-contact.css">
+</head>
+<body>
+    <!-- Inicio de ENCABEZADO -->
+    <header id="header">
+        <!-- Inicio de NAV -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="../images/logo-electricwheels.png" alt="Logo" width="150" height="auto" class="d-inline-block align-text-top"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="menu">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link " aria-current="page" href="./index.html">Inicio</a></li>
+                            <li class="nav-item"><a class="nav-link" aria-current="page" href="./pages/about-us.html">Nosotros</a></li>
+                            <li class="nav-item"><a class="nav-link" aria-current="page" href="./pages/branch-offices.html">Sucursales</a></li>
+                            <li class="nav-item"><a class="nav-link" aria-current="page" href="./pages/products.html">Productos</a></li>
+                            <li class="nav-item"><a class="nav-link active" aria-current="page" href="./pages/contact.html">Contacto</a></li>
+                        </ul>
+                    </div>
+                    <div class="shop-search">
+                        <div>
+                            <a href="./pages/products.html"><i class="fa-solid fa-bag-shopping"></i></a>
+                            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Fin de NAV -->
+    </header>
+    <!-- Fin de ENCABEZADO -->
+
+    <!-- Inicio MAIN -->
+    <main>
+        <section>              
+                <form >
+                    <label for="name">Nombre*</label>
+                    <input type="text" name="name" id="name" required>
+                    <label for="email">Correo electrónico*</label>
+                    <input type="email" name="email" id="email" required>
+                    <label for="tel">Teléfono*</label>
+                    <input type="tel" name="tel" id="tel" required>
+                    <label for="province">Provincia*</label>
+                    <select name="province" id="province" required>
+                        <option value="ba">Buenos Aires</option>
+                        <option value="ca">Catamarca</option>
+                        <option value="ch">Chaco</option>
+                        <option value="ct">Chubut</option>
+                        <option value="cb">Córdoba</option>
+                        <option value="cr">Corrientes</option>
+                        <option value="er">Entre Ríos</option>
+                        <option value="fo">Formosa</option>
+                        <option value="jy">Jujuy</option>
+                        <option value="lp">La Pampa</option>
+                        <option value="lr">La Rioja</option>
+                        <option value="mz">Mendoza</option>
+                        <option value="mi">Misiones</option>
+                        <option value="nqn">Neuquén</option>
+                        <option value="rn">Río Negro</option>
+                        <option value="sa">Salta</option>
+                        <option value="sj">San Juan</option>
+                        <option value="sl">San Luis</option>
+                        <option value="sc">Santa Cruz</option>
+                        <option value="sf">Santa Fe</option>
+                        <option value="se">Santiago del Estero</option>
+                        <option value="tf">Tierra del Fuego</option>
+                        <option value="tu">Tucumán</option>
+                    </select>
+                    <label for="location">Localidad*</label>
+                    <select name="location" id="location" required>
+                        <option value="rosario">Rosario</option>
+                        <option value="santa-fe">Santa Fe (Capital)</option>
+                        <option value="general-lopez">General López</option>
+                        <option value="castellanos">Castellanos</option>
+                        <option value="general-obligado">General Obligado</option>
+                        <option value="san-lorenzo">San Lorenzo</option>
+                        <option value="las-colonias">Las Colonias</option>
+                        <option value="constitucion">Constitución</option>
+                        <option value="caseros">Caseros</option>
+                        <option value="san-jeronimo">San Jerónimo</option>
+                        <option value="san-cristobal">San Cristóbal</option>
+                        <option value="iriondo">Iriondo</option>
+                        <option value="san-martin">San Martín</option>
+                        <option value="vera">Vera</option>
+                        <option value="belgrano">Belgrano</option>
+                        <option value="san-justo">San Justo</option>
+                        <option value="san-javier">San Javier</option>
+                        <option value="9-de-julio">9 de Julio</option>
+                        <option value="garay">Garay</option>
+                    </select>
+                    <label for="message-reason">Motivo del mensaje*</label>
+                    <label for="queja">Queja</label> <!-- traducir queja-->
+                    <input type="radio" name="motive" id="queja"> <!-- traducir queja-->
+                    <label for="more-information">Más información</label>
+                    <input type="radio" name="motive" id="more-information">
+                    <label for="question">Pregunta</label>
+                    <input type="radio" name="motive" id="question">
+                    <label for="mesage">Mensaje*</label>
+                    <textarea name="mensage" id="mensage cols="30" rows="10" required></textarea>
+                    <input type="submit" value="Enviar">           
+            </form>
+        </section>
+    </main>
+    <!-- Fin MAIN -->
+
+    <!-- Inicio SECTIONS -->
+    <section>
+        <h2>O encontranos en:</h2>
+        <article>
+            <div>
+                <div>
+                    <h3>Sucursales</h3>
+                    <ol>
+                        <li>Sucursal Córdoba 1145</li>
+                        <li>Sucursal Avenida Pellegrini 2468</li>
+                        <li>Sucursal Boulevard Oroño 1567</li>
+                        <li>Sucursal San Luis 880</li>
+                        <li>Sucursal Avenida Francia 1456</li>
+                    </ol>
+                </div>
+                <div>
+                    <iframe src="https://www.google.com/maps/d/embed?mid=1nB-9Pw81X5QrFrzJ8pkm0TZ1aN6nDYI&hl=es&ehbc=2E312F" width="640" height="480"></iframe>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <section>
+        <h2>SINO CONTACTANOS POR</h2>
+        <ul>
+            <li><a href="https://web.whatsapp.com/" target="_blank"><i class="fa-brands fa-whatsapp logos"></i>+54 9 341 765-4321</a></li>
+            <li><a href="https://web.whatsapp.com/" target="_blank"><i class="fa-regular fa-envelope"></i>info@electricwheels.com.ar</a></li>
+            <li><a href="https://web.whatsapp.com/" target="_blank"><i class="fa-solid fa-phone"></i>+54 341 123-4567</a></li>
+            <li><a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram logos"></i></a>@electricwheels.arg</li>
+        </ul>
+    </section>
+    <!-- Fin SECTIONS -->
+
+    <!-- Inicio de FOOTER -->
+    <footer>
+        <div class="logo-footer">
+            <a href="#header"><img src="../images/logo-electricwheels-name-black-white.png" alt="Logo ElectricWheels con el nombre"></a>
+        </div>
+        <div class="search">
+            <div class="direction">
+                <p>DIRECCIÓN</p>
+                <a href="./pages/contact.html"><i class="fa-solid fa-map-location-dot"></i></a>
+                <input type="button" value="CÓMO LLEGAR">
+            </div>
+            <div class="suscribe-newsletter">
+                
+                <div>
+                    <form>
+                        <label for="email-newsletter">Suscribete a nuestro Newsletter</label>
+                        <input type="email" name="email-newsletter" id="email-newsletter" placeholder="usuario@gmail.com">
+                        <input type="button" value="Suscribete">
+                    </form>
+                </div>
+            </div>
+            <div class="social-media">
+                <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram logos"></i></a>
+                <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook logos"></i></a>
+                <a href="https://web.whatsapp.com/" target="_blank"><i class="fa-brands fa-whatsapp logos"></i></a>
+            </div>
+        </div>
+    </footer>
+    <!-- Fin de FOOTER -->
+
+    <!-- Link BOOSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
