@@ -71,18 +71,6 @@ section {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.branch-offices {
-    grid-area: section;
-}
-
-.branch-offices iframe {
-    width: 50%;
-}
-
-.contact {
-    grid-area: section2;
-}
-
 .form h2 {
     text-align: center;
 }
@@ -99,6 +87,66 @@ form button {
     background-color: #333 !important;
 }
 
+.branch-offices {
+    grid-area: section;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.branch-offices h2 {
+    text-align: center;
+    font-weight: 700;
+}
+
+.list-map {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list ol {
+    padding: 0px;
+}
+
+.list li {
+    list-style: none;
+}
+
+.list li i{
+    color: rgba(155, 17, 17, 0.849);
+    padding-right: 5px;
+}
+
+.map iframe{
+    width: 100%;
+}
+
+.contact {
+    grid-area: section2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact ul {
+    list-style: none;
+}
+
+.contact a, .contact i {
+    text-decoration: none;
+    color: #0c1104;
+    font-size: 1.2rem;
+    padding: 10px;
+}
+
+.contact i {
+    font-size: 1.5rem;
+    font-weight: 900;
+}
 
 /* FOOTER */
 footer {
@@ -119,6 +167,7 @@ footer {
 }
 
 .logo-footer img {
+    width: 150px;
     margin: 15px;
 }
 
@@ -176,9 +225,11 @@ footer {
         grid-template-areas:
             "header header header"
             "main main main"
+            "section section section"
+            "section2 section2 section2"
             "footer footer footer";
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 100vh auto 200px;
+        grid-template-rows: 100vh auto auto auto 200px;
     }
 
     header {
@@ -194,8 +245,6 @@ footer {
         top: 0;
         z-index: 100;
     }
-
-    /* MAIN */
 
     /* FOOTER */
     footer {
